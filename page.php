@@ -14,7 +14,7 @@
 					Comparte esta página
 					<a href="http://twitter.com/home?status=<?php the_title_attribute(); ?>%20<?php the_permalink() ?>" title="Twitter"><i class="fa fa-twitter"></i></a>
 					<a href="https://plus.google.com/share?url=<?php the_permalink() ?>" title="Google+"><i class="fa fa-google-plus"></i></a>
-					<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=<?php the_permalink() ?>&p[images][0]=&p[title]=<?php the_title_attribute(); ?>&p[summary]=<?php the_excerpt(); ?>" title="Facebook"><i class="fa fa-facebook"></i></a>
+					<a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=<?php the_permalink() ?>&amp;p[images][0]=&amp;p[title]=<?php the_title_attribute(); ?>&amp;p[summary]=<?php the_excerpt(); ?>" title="Facebook"><i class="fa fa-facebook"></i></a>
 				</p>
 			</article>
 	<?php endwhile; ?>
