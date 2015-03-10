@@ -1,4 +1,4 @@
-# Custom WordPress Responsive Theme
+# Custom Responsive WordPress Theme
 
 This is the theme I've developed for [El Blog de Manu](http://elblogdemanu.com/). It's very simple and it has many harcoded values and shortcuts to make it fast. It can be used as a base for your theme, changing some images, throwing some `bloginfo()` functions or changing some literals.
 
