@@ -107,7 +107,7 @@ h1.title {
 #nav {
 	float: right;
 	a {
-		text-align: center;	
+		text-align: center;
 		color: #fff;
 		text-decoration: none;
 	}
@@ -186,7 +186,7 @@ h1.title {
 	background: #eee;
 	border-top: 1px solid #ddd;
 }
-footer {	
+footer {
 	text-align: center;
 	padding: 1em;
 	p {
@@ -459,7 +459,7 @@ aside.links {
 	display: block;
 	font-size: 0.8em;
 	text-align: center;
-	padding-top: 20px;	
+	padding-top: 20px;
 	p {
 		color: #666;
 		font-style: italic;
@@ -529,7 +529,7 @@ aside.links {
 	}
 	.banners {
 		display: block;
-		padding: 20px 0;		
+		padding: 20px 0;
 		p {
 			margin: 0 0 0.5em;
 			color: #666;
@@ -540,12 +540,28 @@ aside.links {
 			margin: 1em 0 0.2em;
 		}
 	}
-	.banner, .affiliate {
+	.affiliate {
 		display: block;
 		float: left;
 		margin-right: 20px;
 		font-size: 0.6em;
 		line-height: 1.4em;
+	}
+	.banner {
+		display: block;
+		float: left;
+		width: 47%;
+		img {
+			width: 100%;
+			max-width: 100%;
+			vertical-align: middle;
+		}
+	}
+	.banner.pf {
+		margin-right: 6%;
+	}
+	.banner.re {
+		margin-top: 0.7em;
 	}
 	.affiliate span {
 		display: block;
@@ -559,7 +575,7 @@ aside.links {
 		left: -240px;
 	}
 	#nav {
-		margin-left: 240px;		
+		margin-left: 240px;
 	}
 	.social {
 		position: absolute;

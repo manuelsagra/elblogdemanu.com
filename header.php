@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <!--
-    ______ __   ____   __                     __         __  ___                    
+    ______ __   ____   __                     __         __  ___
    / ____// /  / __ ) / /____   ____ _   ____/ /___     /  |/  /____ _ ____   __  __
   / __/  / /  / __  |/ // __ \ / __ `/  / __  // _ \   / /|_/ // __ `// __ \ / / / /
- / /___ / /  / /_/ // // /_/ // /_/ /  / /_/ //  __/  / /  / // /_/ // / / // /_/ / 
-/_____//_/  /_____//_/ \____/ \__, /   \__,_/ \___/  /_/  /_/ \__,_//_/ /_/ \__,_/  
-                             /____/                                                 
+ / /___ / /  / /_/ // // /_/ // /_/ /  / /_/ //  __/  / /  / // /_/ // / / // /_/ /
+/_____//_/  /_____//_/ \____/ \__, /   \__,_/ \___/  /_/  /_/ \__,_//_/ /_/ \__,_/
+                             /____/
 -->
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title><?php wp_title('::',true,'right'); ?>El Blog de Manu</title>
-		<meta name="description" content="<?php if (!is_single()) : bloginfo('description'); else: 
+		<meta name="description" content="<?php if (!is_single()) : bloginfo('description'); else:
 $post = $wp_query->post;
 $descrip = strip_tags($post->post_content);
 $descrip_more = '';
@@ -31,7 +31,7 @@ echo $descrip;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 		<meta name="robots" content="follow, all, noodp">
 
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?20140919">
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?20150331">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
@@ -42,7 +42,7 @@ echo $descrip;
 		<!--[if lt IE 7]>
 			<p class="outdated">Estás usando un navegador <strong>inseguro</strong> y <strong>desactualizado</strong>. Por favor, <a href="http://browsehappy.com/">actualízalo</a> para mejorar tu experiencia al navegar por Internet.</p>
 		<![endif]-->
-	
+
 		<div class="header-container">
 			<header class="wrapper clearfix">
 				<h1 class="title"><a href="/">El Blog de Manu</a></h1>
@@ -68,8 +68,8 @@ echo $descrip;
 				</ul>
 			</header>
 		</div>
-		
-		<?php if (is_home()) : ?>		
+
+		<?php if (is_home()) : ?>
 		<div class="profile-container">
 			<section class="profile wrapper clearfix">
 				<a href="http://manuelsagra.com/" class="manu">Manu</a>
@@ -78,6 +78,6 @@ echo $descrip;
 			</section>
 		</div>
 		<?php endif; ?>
-	
+
 		<div class="main-container">
 		<div class="main wrapper clearfix">
