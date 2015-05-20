@@ -11,13 +11,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><?php wp_title('::',true,'right'); ?>El Blog de Manu</title>
+		<title><?php wp_title('::', true, 'right'); ?>El Blog de Manu</title>
 		<meta name="description" content="<?php if (!is_single()) : bloginfo('description'); else:
 $post = $wp_query->post;
 $descrip = strip_tags($post->post_content);
 $descrip_more = '';
 if (strlen($descrip) > 155) {
-	$descrip = substr($descrip,0,155);
+	$descrip = substr($descrip, 0, 155);
 	$descrip_more = ' ...';
 }
 $descrip = str_replace('"', '', $descrip);
@@ -30,6 +30,23 @@ echo $descrip;
 		<meta name="keywords" content="manuel sagra, blog, juegos, reportajes, entrevistas, diseño, internet, opinion, curiosidades, desarrollo, manu">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 		<meta name="robots" content="follow, all, noodp">
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@manuelsagra">
+		<meta name="twitter:title" content="<?php wp_title('::', true, 'right'); ?>El Blog de Manu">
+		<meta name="twitter:description" content="<?php if (!is_single()) : bloginfo('description'); else: echo trim(substr(strip_tags($post->post_content), 0, 250)); endif; ?>">
+		<meta name="twitter:image" content="<?php
+if (is_single()) {
+	$images = get_children("post_parent=$post->ID&post_type=attachment&post_mime_type=image");
+	if ($images && count($images) > 0) {
+		echo reset(array_reverse($images))->guid;
+	} else {
+		echo 'http://elblogdemanu.com/wordpress/wp-content/themes/responsive/img/mai@2x.png';
+	}
+} else {
+	echo 'http://elblogdemanu.com/wordpress/wp-content/themes/responsive/img/mai@2x.png';
+}
+?>">
 
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?20150331">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
