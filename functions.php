@@ -1,5 +1,6 @@
 <?php
 $GLOBALS['content_width'] = 640;
+add_image_size('blog640', 640, 640);
 if (function_exists('add_theme_support')) {
 	add_theme_support('post-thumbnails'); 
 }

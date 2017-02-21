@@ -24,6 +24,7 @@
 					<p><?php comments_popup_link('<i class="fa fa-comment-o"></i> Sin comentarios','<i class="fa fa-comment"></i> Un comentario','<i class="fa fa-comments"></i> % comentarios'); ?></p>
 					<?php edit_post_link('<i class="fa fa-pencil-square-o"></i> Editar', '<p>', '</p>'); ?>
 				</aside>
+				<?php if (has_post_thumbnail()) : echo '<figure><a href="' . get_the_permalink() . '">' . get_the_post_thumbnail() . '</a></figure>';  endif; ?>
 				<?php the_excerpt(); ?>
 				<p class="alignRight">
 					<a href="<?php the_permalink() ?>" class="readfull">Leer entrada completa</a>

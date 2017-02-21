@@ -7,11 +7,18 @@
 					<a href="http://paraisofriki.com/" class="banner pf"><img src="<?php bloginfo('template_directory'); ?>/img/pf.png" alt="Paraíso Friki" title="Paraíso Friki"></a>
 					<a href="http://retroescena.com/" class="banner re"><img src="<?php bloginfo('template_directory'); ?>/img/re.png" alt="RetroEscena" title="RetroEscena"></a>
 				</div>
-				<p class="affiliated"><i class="fa fa-trophy"></i> Patrocinadores</p>
+				<p class="affiliated"><i class="fa fa-trophy"></i> Partner</p>
 				<div class="clearfix">
 					<div class="affiliate"><a href="http://www.paisdelosjuegos.com.mx/" target="_blank">Pais de los Juegos</a>
 						<span>Juega a miles de juegos gratuitos</span>
 					</div>
+					<div class="affiliate"><a href="http://www.juegosinfantiles.com" target="_blank">Juegosinfantiles.com</a>
+					</div>
+					<div class="affiliate"><a href="http://juegos-casino.org/" target="_blank">juegos-casino.org</a></div>
+					<div class="affiliate"><a href="http://www.casinocarlos.com" target="_blank">CasinoCarlos.com</a></div>
+					<div class="affiliate"><a href="http://www.casinosenvivo.es/ruleta/" target="_blank">Ruleta en Vivo</a></div>
+<div style="clear:both"></div>
+					<?php if (is_front_page() && !is_paged()) { ?><div class="affiliate" style="margin-top:1em"><a href="http://www.casinosonlineespana.org/" target="_blank">www.casinosonlineespana.org</a></div><?php } ?>
 				</div>
 			</div>
 			<footer>
@@ -24,5 +31,6 @@
 				</p>
 			</footer>
 		</div>
+<?php wp_footer(); ?>
 	</body>
 </html>
