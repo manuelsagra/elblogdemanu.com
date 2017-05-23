@@ -14,10 +14,10 @@ $hover: #e35d22;
 $code: #eee;
 $codeBorder: #ccc;
 
-@include font-face('Open Sans', "//static.elblogdemanu.com/fonts/open-sans-v13-latin-regular", 400, normal);
-@include font-face('Open Sans', "//static.elblogdemanu.com/fonts/open-sans-v13-latin-italic", 400, italic);
-@include font-face('Open Sans', "//static.elblogdemanu.com/fonts/open-sans-v13-latin-700", bold, normal);
-@include font-face('Open Sans', "//static.elblogdemanu.com/fonts/open-sans-v13-latin-700italic", bold, italic);
+@include font-face('Open Sans', "/fonts/open-sans-v13-latin-regular", 400, normal);
+@include font-face('Open Sans', "/fonts/open-sans-v13-latin-italic", 400, italic);
+@include font-face('Open Sans', "/fonts/open-sans-v13-latin-700", bold, normal);
+@include font-face('Open Sans', "/fonts/open-sans-v13-latin-700italic", bold, italic);
 
 /* Basic elements */
 html, button, input, select, textarea {
