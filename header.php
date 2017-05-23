@@ -48,7 +48,7 @@ if (is_single()) {
 }
 ?>">
 
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?20170523">
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?20170523b">
 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/ElBlogDeManu">
 		<?php if (is_single()) : ?><link rel="canonical" href="<?php the_permalink(); ?>"><?php endif; ?>
