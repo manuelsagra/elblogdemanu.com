@@ -2,16 +2,22 @@
 Theme Name: ElBlogDeManu
 Theme URI: http://elblogdemanu.com/
 Description: Tema responsive para El Blog de Manu
-Version: 6.0
+Version: 6.1
 Author: Manuel Sagra de Diego
 */
 @import 'normalize';
-@import 'bourbon';
+@import 'font-awesome/font-awesome';
+@import 'mixins';
 
 $blue: #204b8c;
 $hover: #e35d22;
 $code: #eee;
 $codeBorder: #ccc;
+
+@include font-face('Open Sans', "//static.elblogdemanu.com/fonts/open-sans-v13-latin-regular", 400, normal);
+@include font-face('Open Sans', "//static.elblogdemanu.com/fonts/open-sans-v13-latin-italic", 400, italic);
+@include font-face('Open Sans', "//static.elblogdemanu.com/fonts/open-sans-v13-latin-700", bold, normal);
+@include font-face('Open Sans', "//static.elblogdemanu.com/fonts/open-sans-v13-latin-700italic", bold, italic);
 
 /* Basic elements */
 html, button, input, select, textarea {
@@ -77,7 +83,7 @@ h1.title {
 		display: block;
 		width: 200px;
 		height: inherit;
-		@include retina-image(img/mai, 51px 55px);
+		background-image: url(img/mai.png);
 		background-position: 10px bottom;
 		background-repeat: no-repeat;
 		color: #fff;
@@ -168,7 +174,7 @@ h1.title {
 		width: 128px;
 		height: 128px;
 		margin: 1em 1em 1em 0;
-		@include retina-image(img/profile, 128px 128px, jpg);
+		background-image: url(img/profile.jpg);
 		text-indent: 100%;
 		overflow: hidden;
 	}
@@ -247,15 +253,15 @@ article img, article figure, aside.links img {
 	margin: auto;
 	height: auto;
 	display: block;
-	@include box-sizing(border-box);
+	box-sizing: border-box;
 }
 article iframe {
 	max-width: 100%;
 	margin: auto;
 	display: block;
-	@include box-sizing(border-box);
+	box-sizing: border-box;
 }
-article figure, article li, section li {
+article figure, article li, section li, .twitter-tweet {
 	position: relative;
 	margin: 1em auto;
 }
@@ -423,7 +429,7 @@ table ul {
 		border: 1px solid #ccc;
 		width: 100%;
 		padding: 0 0.2em;
-		@include box-sizing(border-box);
+		box-sizing: border-box;
 	}
 	input.send {
 		line-height: 2em;
@@ -697,6 +703,18 @@ aside.links {
 }
 .column {
 	width: 48%;
+}
+
+/* Retina images */
+@media only screen and (-webkit-min-device-pixel-ratio:1.3), only screen and (min--moz-device-pixel-ratio:1.3), only screen and (-o-min-device-pixel-ratio:1.3 / 1), only screen and (min-resolution:125dpi), only screen and (min-resolution:1.3dppx){
+	h1.title a{
+		background-image:url(img/mai_2x.png);
+		background-size:51px 55px;
+	}
+	.profile .manu {
+		background-image:url(img/profile_2x.jpg);
+		background-size:128px 128px;
+	}
 }
 
 /* Print */

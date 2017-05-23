@@ -48,9 +48,7 @@ if (is_single()) {
 }
 ?>">
 
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?20150331">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?20170523">
 
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/ElBlogDeManu">
 		<?php if (is_single()) : ?><link rel="canonical" href="<?php the_permalink(); ?>"><?php endif; ?>
