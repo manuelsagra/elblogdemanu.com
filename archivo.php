@@ -7,7 +7,7 @@ Template Name: Archivo
 	<?php while (have_posts()) : the_post(); ?>
 			<article class="post clearfix">
 				<header>
-					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+					<h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 				</header>
 				<form method="get" action="http://www.google.es/search">
 					<input type="hidden" name="ie" value="UTF-8">

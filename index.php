@@ -16,7 +16,7 @@
 	<?php while (have_posts()) : the_post(); ?>
 	 		<article class="post clearfix">
 				<header>
-					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+					<h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 				</header>
 				<aside class="meta">
 					<p><time datetime="<?php the_time('c'); ?>" pubdate><i class="fa fa-calendar-o"></i> <?php the_time('j \d\e F \d\e Y'); ?></time></p>
@@ -37,7 +37,7 @@
 		<?php if (!pp_is_first_page()) { ?>
 			<a href="/">Lo más reciente</a> 
 		<?php } if (pp_has_previous_page()) { ?>
-			<a href="<?php pp_the_previous_page_permalink(); ?>"><i class="fa fa-chevron-left"></i></a>
+			<a href="<?php pp_the_previous_page_permalink(); ?>" aria-label="Anterior"><i class="fa fa-chevron-left"></i></a>
 		<?php } pp_rewind_pagination(); ?>
 		
 		<?php while(pp_has_pagination()) { pp_the_pagination(); ?>
@@ -49,7 +49,7 @@
 		<?php } pp_rewind_pagination(); ?>
 		
 		<?php pp_the_pagination(); if (pp_has_next_page()) { ?>
-			<a href="<?php pp_the_next_page_permalink(); ?>"><i class="fa fa-chevron-right"></i></a>
+			<a href="<?php pp_the_next_page_permalink(); ?>" aria-label="Siguiente"><i class="fa fa-chevron-right"></i></a>
 		<?php } pp_rewind_pagination(); ?> 
 		<?php if (!pp_is_last_page()) { ?>
 			<a href="<?php pp_the_last_page_permalink(); ?>">Lo más antiguo</a> 

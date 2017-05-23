@@ -91,12 +91,12 @@ img.emoji {
 					</ul>
 				</nav>
 				<ul class="social">
-					<li><a href="https://github.com/manuelsagra" title="Github"><i class="fa fa-github"></i></a></li>
-					<li><a href="http://www.flickr.com/photos/manuelsagra/" title="Flickr"><i class="fa fa-flickr"></i></a></li>
-					<li><a href="http://www.linkedin.com/in/manuelsagra" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://plus.google.com/+ManuelSagradeDiego/" title="Google+"><i class="fa fa-google-plus"></i></a></li>
-					<li><a href="https://twitter.com/manuelsagra" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="mailto:manuelsagra@gmail.com" title="Contacto"><i class="fa fa-envelope"></i> </a></li>
+					<li><a href="https://github.com/manuelsagra" title="Github" aria-label="Github"><i class="fa fa-github"></i></a></li>
+					<li><a href="http://www.flickr.com/photos/manuelsagra/" title="Flickr" aria-label="Flickr"><i class="fa fa-flickr"></i></a></li>
+					<li><a href="http://www.linkedin.com/in/manuelsagra" title="LinkedIn" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="https://plus.google.com/+ManuelSagradeDiego/" title="Google+" aria-label="Google+"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="https://twitter.com/manuelsagra" title="Twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="mailto:manuelsagra@gmail.com" title="Contacto" aria-label="Contacto"><i class="fa fa-envelope"></i> </a></li>
 				</ul>
 			</header>
 		</div>

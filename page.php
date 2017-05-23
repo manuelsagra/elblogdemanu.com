@@ -3,7 +3,7 @@
 	<?php while (have_posts()) : the_post(); ?>
 			<article class="page clearfix">
 				<header>
-					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+					<h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 				</header>
 				<aside class="meta">
 					<p><time datetime="<?php the_time('c'); ?>" pubdate><i class="fa fa-calendar-o"></i> <?php the_time('j \d\e F \d\e Y'); ?></time></p>
