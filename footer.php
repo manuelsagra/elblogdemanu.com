@@ -27,7 +27,7 @@
 					<a href="/aviso-legal-y-politica-de-privacidad/">Aviso legal</a> &middot; <a href="/enlaces/">Enlaces</a> &middot; <a href="/archivo/">Archivo</a> &middot; <a href="/about/">Sobre mí</a>
 				</p>
 				<p>
-					Tema diseñado por <a href="http://manuelsagra.com/" rel="author">Manuel Sagra</a> con iconos <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>
+					Tema diseñado por <a href="http://manuelsagra.com/" rel="author">Manuel Sagra</a> con iconos <a href="http://fontawesome.io/">Font Awesome</a>
 				</p>
 			</footer>
 		</div>
