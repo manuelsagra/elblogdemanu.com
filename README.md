@@ -15,6 +15,6 @@ These plugins are used for optimal performance:
 
 * All dates are formatted in spanish, and it's intended for a [WordPress ES](https://es.wordpress.org/) installation.
 * There are two page templates: `archivo.php` for showing archives, and `enlaces.php` to show links. The last one is heavily customized to my needs.
-* The stylesheet file is built using Compass. I've included the [Prepros](https://prepros.io/) configuration file.
+* The stylesheet file is built using [SASS](https://sass-lang.com/).
 * [Post thumbnails](http://codex.wordpress.org/Post_Thumbnails) are used to show my favourite posts under the "Destacados" header. The images should be 640 pixels wide by 200 pixels tall in order to look great both on mobile and retina screens.
 * This theme makes use of the [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) font, [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icons, and [normalize-scss](https://github.com/JohnAlbin/normalize-scss).
