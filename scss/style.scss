@@ -22,10 +22,12 @@ $codeBorder: #ccc;
 /* Basic elements */
 html, button, input, select, textarea {
 	color: #222;
-	font: 1em/1.8em 'Open Sans', Lucida Grande, sans-serif;
+	font: 1em/1.8em 'Open Sans', Helvetica, Lucida Grande, sans-serif;
 }
 body {
 	background: #f6f6f6 url(img/noise.png);
+	margin: 0;
+	padding: 0;
 }
 a {
 	color: $blue;
@@ -451,11 +453,11 @@ nav.pages {
 		text-decoration: none;
 		background: #ddd;
 		text-transform: uppercase;
-		color: #666;
+		color: #333;
 		white-space: nowrap;
 	}
 	span {
-		background: #666;
+		background: #333;
 		color: #eee;
 	}
 }
